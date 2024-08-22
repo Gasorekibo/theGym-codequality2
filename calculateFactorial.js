@@ -1,2 +1,6 @@
 const returnFactorialOfNumber = (number) =>
-  number <= 1 ? 1 : number * returnFactorialOfNumber(number - 1);
+  number < 0
+    ? undefined
+    : number <= 1
+    ? 1
+    : number * returnFactorialOfNumber(number - 1);
